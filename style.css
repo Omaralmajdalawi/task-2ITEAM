@@ -8,9 +8,8 @@ body {
 
 .container-0 {
   
-padding-top: 20px;
-padding-left: 50px;
-padding-right: 50px;
+padding-left: 40px;
+padding-right: 40px;
   
 }
 
@@ -18,7 +17,7 @@ padding-right: 50px;
 
 .header {
     margin-top: 40px;
-    padding-top: 0;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,12 +31,30 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 20px;
+    
 }
 
 nav a:hover {
     text-decoration: underline;
 }
-
+/* Styles for smaller screens */
+@media (max-width: 600px) {
+    nav a{
+        width: 100%;
+        padding: 10px;
+        font-size: 9px;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 50px;
+    }
+    .container-0 {
+  
+        padding-left: 10px;
+        padding-right: 10px;
+          
+        }
+}
 
 .hero {
     display: flex;
